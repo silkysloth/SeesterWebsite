@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eredienste — Seester Gemeente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="seester.css">
+  <style>
+    .eredienste-wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 5rem 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .eredienste-card {
+      background: var(--dark);
+      border: 1px solid rgba(45, 143, 163, 0.2);
+      border-radius: 3px;
+      padding: 2.5rem;
+      border-top: 3px solid var(--pink);
+    }
+
+    .eredienste-card.teal-top { border-top-color: var(--teal); }
+
+    .eredienste-card-icon {
+      width: 44px; height: 44px;
+      color: var(--pink);
+      margin-bottom: 1.5rem;
+    }
+    .teal-top .eredienste-card-icon { color: var(--teal); }
+
+    .eredienste-card h2 {
+      font-family: var(--display-font);
+      font-size: 1.9rem;
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.1;
+      margin-bottom: 0.8rem;
+    }
+    .eredienste-card h2 em { font-style: italic; color: var(--pink-light); }
+    .teal-top .eredienste-card h2 em { color: var(--teal-light); }
+
+    .eredienste-card p {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--gray-light);
+      line-height: 1.8;
+      margin-bottom: 1.8rem;
+    }
+
+    .eredienste-card .live-time {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1.8rem;
+    }
+    .live-dot-large {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--pink);
+      animation: blink 1.4s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    .live-time-text {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--pink-light);
+    }
+
+    @media (max-width: 700px) {
+      .eredienste-wrap { grid-template-columns: 1fr; padding: 3rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="seester.html" class="nav-logo">
+      <img src="seester.png" alt="Seester Gemeente">
+    </a>
+    <ul class="nav-links">
+      <li><a href="oorons.html">Wie Is Ons</a></li>
+      <li><a href="eredienste.html">Eredienste</a></li>
+      <li><a href="bedieninge.html">Bedieninge</a></li>
+      <li><a href="aktiwiteite.html">Aktiwiteite</a></li>
+      <li><a href="seester.html#kontak" class="nav-cta">Kontak Ons</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <p class="page-hero-label">Kom Aanbid</p>
+    <h1 class="page-hero-title">Ere<em>dienste</em></h1>
+    <p class="page-hero-sub">Elke Sondag om 09:00 · Brackenhurst</p>
+  </div>
+
+  <div class="eredienste-wrap fade-up">
+
+    <!-- LIVE CARD -->
+    <div class="eredienste-card">
+      <svg class="eredienste-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M23 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.4 2.8 12 2.8 12 2.8s-4.4 0-6.8.1c-.6.1-1.9.1-3 1.3C1.3 5 1 7 1 7S.7 9.2.7 11.4v2.1c0 2.2.3 4.4.3 4.4s.3 2 1.2 2.8c1.1 1.2 2.6 1.1 3.3 1.2C7.5 22 12 22 12 22s4.4 0 6.8-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.3-2.2.3-4.4v-2.1C23.3 9.2 23 7 23 7z"/>
+        <polygon points="10 15 15 12 10 9" fill="currentColor" stroke="none"/>
+      </svg>
+      <h2>Lewendige <em>Uitsending</em></h2>
+      <div class="live-time">
+        <div class="live-dot-large"></div>
+        <span class="live-time-text">Elke Sondag om 09:00</span>
+      </div>
+      <p>Kan jy nie fisies bywoon nie? Kyk ons erediens lewendig op YouTube elke Sondag oggend.</p>
+      <a href="https://youtube.com/@nhkseestergemeente5258?si=xDhxzyFllQKO4ydV" target="_blank" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        Kyk Lewendig op YouTube
+      </a>
+    </div>
+
+    <!-- PLAYLIST CARD -->
+    <div class="eredienste-card teal-top">
+      <svg class="eredienste-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/>
+        <line x1="8" y1="18" x2="21" y2="18"/>
+        <circle cx="3" cy="6" r="1" fill="currentColor" stroke="none"/>
+        <circle cx="3" cy="12" r="1" fill="currentColor" stroke="none"/>
+        <circle cx="3" cy="18" r="1" fill="currentColor" stroke="none"/>
+      </svg>
+      <h2>Preke <em>Playlist</em></h2>
+      <p>Luister terug na al ons preke op ons YouTube-kanaal. Ons volledige argief is beskikbaar — soek na 'n spesifieke teks, predikant of datum.</p>
+      <a href="https://youtube.com/playlist?list=PLf5a4Mi92lKwk6YonbcHQLNrb381OSd64&si=aFe1S7yCOXSmrY83" target="_blank" class="btn-outline" style="display:inline-flex;align-items:center;gap:0.5rem;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" stroke="none"/>
+        </svg>
+        Besoek Playlist
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-logo"><img src="seester.png" alt="Seester Gemeente"></div>
+    <ul class="footer-links">
+      <li><a href="oorons.html">Wie Is Ons</a></li>
+      <li><a href="eredienste.html">Eredienste</a></li>
+      <li><a href="bedieninge.html">Bedieninge</a></li>
+      <li><a href="aktiwiteite.html">Aktiwiteite</a></li>
+      <li><a href="bankbesonderhede.html">Bankbesonderhede</a></li>
+      <li><a href="nuweintrekkers.html">Nuwe Intrekkers</a></li>
+      <li><a href="popia.html">POPIA</a></li>
+    </ul>
+    <div class="footer-copy">© 2025 Seester Gemeente · Brackenhurst</div>
+  </footer>
+
+  <script src="seester.js"></script>
+</body>
+</html>

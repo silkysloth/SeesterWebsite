@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuwe Intrekkers — Seester Gemeente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="seester.css">
+</head>
+<body>
+  <nav>
+    <a href="seester.html" class="nav-logo">
+      <img src="seester.png" alt="Seester Gemeente">
+    </a>
+    <ul class="nav-links">
+      <li><a href="oorons.html">Wie Is Ons</a></li>
+      <li><a href="eredienste.html">Eredienste</a></li>
+      <li><a href="bedieninge.html">Bedieninge</a></li>
+      <li><a href="aktiwiteite.html">Aktiwiteite</a></li>
+      <li><a href="seester.html#kontak" class="nav-cta">Kontak Ons</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <p class="page-hero-label">Welkom</p>
+    <h1 class="page-hero-title">Nuwe <em>Intrekkers</em></h1>
+    <p class="page-hero-sub">Ons is bly jy het ons gevind</p>
+  </div>
+
+  <div class="form-section fade-up">
+    <p>Is jy nuut in die omgewing of soek jy 'n geestelike tuiste? Ons wil graag meer van jou weet. Vul asseblief die vorm hieronder in sodat ons met jou in verbinding kan tree.</p>
+
+    <form id="contact-form" action="https://formspree.io/f/xvzlkqej" method="POST">
+      <input type="hidden" name="_subject" value="Nuwe Intrekker - Seester Gemeente">
+
+      <div class="form-row">
+        <div class="form-field-light">
+          <label>Voorname *</label>
+          <input type="text" name="voorname" placeholder="Jou voorname" required>
+        </div>
+        <div class="form-field-light">
+          <label>Van *</label>
+          <input type="text" name="van" placeholder="Jou van" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field-light">
+          <label>E-posadres *</label>
+          <input type="email" name="email" placeholder="jou@epos.com" required>
+        </div>
+        <div class="form-field-light">
+          <label>Selfoonnommer *</label>
+          <input type="tel" name="selfoon" placeholder="082 000 0000" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field-light">
+          <label>Adres</label>
+          <input type="text" name="adres" placeholder="Straat en nommer">
+        </div>
+        <div class="form-field-light">
+          <label>Suburb</label>
+          <input type="text" name="suburb" placeholder="bv. Brackenhurst">
+        </div>
+      </div>
+
+      <div class="form-field-light">
+        <label>Aantal persone in huishouding</label>
+        <select name="huishouding">
+          <option value="">Kies...</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5+</option>
+        </select>
+      </div>
+
+      <div class="form-field-light">
+        <label>Hoe het jy van Seester Gemeente gehoor?</label>
+        <select name="verwysing">
+          <option value="">Kies...</option>
+          <option>Vriend of Familie</option>
+          <option>Sosiale Media</option>
+          <option>Google</option>
+          <option>YouTube</option>
+          <option>Ander</option>
+        </select>
+      </div>
+
+      <div class="form-field-light">
+        <label>Enige ander inligting of vrae</label>
+        <textarea name="boodskap" placeholder="Vertel ons gerus meer oor jouself..."></textarea>
+      </div>
+
+      <button type="submit" class="form-submit">
+        Stuur Inligting
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </form>
+  </div>
+
+  <footer>
+    <div class="footer-logo"><img src="seester.png" alt="Seester Gemeente"></div>
+    <ul class="footer-links">
+      <li><a href="oorons.html">Wie Is Ons</a></li>
+      <li><a href="eredienste.html">Eredienste</a></li>
+      <li><a href="bedieninge.html">Bedieninge</a></li>
+      <li><a href="aktiwiteite.html">Aktiwiteite</a></li>
+      <li><a href="bankbesonderhede.html">Bankbesonderhede</a></li>
+      <li><a href="nuweintrekkers.html">Nuwe Intrekkers</a></li>
+      <li><a href="popia.html">POPIA</a></li>
+    </ul>
+    <div class="footer-copy">© 2025 Seester Gemeente · Brackenhurst</div>
+  </footer>
+  <script src="seester.js"></script>
+</body>
+</html>
